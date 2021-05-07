@@ -1,16 +1,33 @@
 # sorting_visualization
 
-A new Flutter application.
+This App Demonstrates sorting algorithms in a much more elegant way. This app allows you to write the same sorting logic as you would do.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Go ahead and clone this repo
 
-A few resources to get you started if this is your first Flutter project:
+```
+git clone https://github.com/Hemanthhari2000/Sorting_Visualizer_Flutter.git
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+and
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+cd sorting_visualization
+```
+
+Now, open your android emulator or connect a physical device and run it.
+
+if you are using terminal to run then
+
+```
+flutter run -d <DEVICE_NAME_OR_DEVICE_ID>
+```
+
+This should do the job and run the app on your device.
+
+You can customize
+
+- Number of bars
+- Sorting Algorithm
+- Speed of the Algorithm
