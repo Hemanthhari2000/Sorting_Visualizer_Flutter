@@ -158,13 +158,48 @@ class _SortHomePageState extends State<SortHomePage> {
 
     stopwatch.stop();
 
-    _scaffoldKey.currentState.removeCurrentSnackBar();
-    _scaffoldKey.currentState.showSnackBar(
-      SnackBar(
-        content: Text(
-            "Completed in ${(stopwatch.elapsed.inMilliseconds * .001).toStringAsFixed(2)}s"),
-      ),
-    );
+    // ======================== Show Snackbar when algo is complete ========================
+
+    // _scaffoldKey.currentState.removeCurrentSnackBar();
+    // _scaffoldKey.currentState.showSnackBar(
+    //   SnackBar(
+    //     content: Text(
+    //         "Completed in ${(stopwatch.elapsed.inMilliseconds * .001).toStringAsFixed(2)}s"),
+    //   ),
+    // );
+
+    // ======================== Show BottomModalSheet when algo is complete ========================
+    _scaffoldKey.currentState.showBottomSheet((context) => Container(
+          height: 300,
+          color: Colors.blue,
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                RichText(
+                  text: TextSpan(
+                    text: "Took about ",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                    ),
+                    children: [
+                      TextSpan(
+                        text:
+                            "${(stopwatch.elapsed.inMilliseconds * .001).toStringAsFixed(2)}s",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ));
+
     setState(() {
       isSorting = false;
       isSorted = true;
