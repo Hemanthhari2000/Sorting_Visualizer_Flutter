@@ -6,14 +6,14 @@ Flutter app which visualizes different sorting algorithms. This app is designed 
 
 <hr>
 
-- **Home Page** where you can view the bars.
+**Home Page** where you can view the bars.
 
-![](resources/home.png)
+<img src="resources/home.png" alt="Home" width="200"/>
 
-- Adjust the **Number of Bars**
+Adjust the **Number of Bars**
 
-![](resources/bars.png)
+<img src="resources/bars.png" alt="Home" width="200"/>
 
-- Select your **Algorithm**
+Select your **Algorithm**
 
-![](resources/algorithms.png)
+<img src="resources/algorithms.png" alt="Home" width="200"/>
