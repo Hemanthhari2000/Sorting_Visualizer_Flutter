@@ -12,8 +12,8 @@ Flutter app which visualizes different sorting algorithms. This app is designed 
 
 Adjust the **Number of Bars**
 
-<img src="resources/bars.png" alt="Home" width="200"/>
+<img src="resources/bar.png" alt="Bar" width="200"/>
 
 Select your **Algorithm**
 
-<img src="resources/algorithms.png" alt="Home" width="200"/>
+<img src="resources/algorithms.png" alt="Algorithms" width="200"/>
